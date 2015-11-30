@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcome_welcome"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/a5s" >
+
+ 					<ImageView
+ 					    android:id="@+id/statusIcon"
+ 					    android:layout_width="fill_parent"
+ 					    android:layout_height="fill_parent"
+ 					    android:layout_marginBottom="-15dip"
+ 					    android:layout_marginLeft="-15dip"
+ 					    android:layout_marginRight="-15dip"
+ 					    android:layout_marginTop="-15dip"
+ 					    android:src="@drawable/a5s"
+ 					    android:visibility="gone"/>
+ 
+   <LinearLayout
+       android:id="@+id/welcome_linear_ctrlbar"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:background="@drawable/bg_welcome_ctrlbar"
+       android:gravity="center_horizontal|bottom"
+       android:orientation="vertical"
+       android:paddingBottom="15dip"
+       android:paddingLeft="5dip"
+       android:paddingRight="5dip"
+       android:paddingTop="13dip"
+       android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/welcome_btn_register"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_margin="5dip"
+                android:background="@drawable/btn_default_blue"
+                android:text="注册"
+                android:textColor="#FFFFFFFF" 
+                 android:onClick="welcome_register"/>
+
+            <Button
+                android:id="@+id/welcome_btn_login"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_margin="5dip"
+                android:background="@drawable/btn_default_white"
+                android:text="登录"
+                android:textColor="#ff465579" 
+                android:onClick="welcome_login"/>
+
+     <!--        <ImageButton
+                android:id="@+id/welcome_ibtn_about"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_margin="5dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/btn_default_white"
+                android:src="@drawable/ic_welcome_about_normal" 
+                android:onClick="welcome_about" /> -->
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>

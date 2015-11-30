@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dip"
+    android:paddingLeft="60dip"
+    android:paddingRight="60dip"
+    android:orientation="vertical"  >
+
+
+  			<TextView
+                android:id="@+id/newslist_item_datatime"
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:layout_below="@+id/feed_item_etv_tit"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lineSpacingExtra="3dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="10dip"
+                android:singleLine="true"
+                android:text="时间"
+                android:background="@drawable/btn_bottombar_disable"
+                
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+    
+  
+    <RelativeLayout
+        android:id="@+id/feed_item_layout_root"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card">
+
+        <RelativeLayout
+            android:id="@+id/feed_item_layout_topcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+      <TextView
+                android:id="@+id/newslist_item_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feed_item_layout_avatar"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="3dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:paddingBottom="5dip"
+                android:singleLine="true"
+                android:text="标题"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            
+           <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/newslist_item_title"
+                android:background="#ffdfdfdf"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/newslist_item_zhaiyao"
+                      android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newslist_item_title"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="3dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:paddingBottom="5dip"
+                android:text="内容"
+                android:textColor="@color/dark_gray"
+                android:textSize="13sp" />
+
+
+            
+         
+        </RelativeLayout>
+
+        
+
+    </RelativeLayout>
+
+</LinearLayout>

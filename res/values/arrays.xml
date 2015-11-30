@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="chat_audio_type">
+        <item>智能切换</item>
+        <item>扬声器模式(免提)</item>
+        <item>听筒模式</item>
+    </string-array>
+
+    
+    <string-array name="seltype_items">
+        <item>拍照上传</item>
+        <item>照片库选择</item>
+    </string-array>
+</resources>

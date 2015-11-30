@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="30.0dip" >
+
+                <RelativeLayout
+                    android:id="@+id/ll_listitem_multiline_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginLeft="10dip"
+                        android:singleLine="true"
+                        android:text="渔业船员专业训练合格证1"
+                        android:textAppearance="@style/NavCommonListItemInfoText" />
+
+                    <TextView
+                        android:id="@+id/tv_hao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_listitem_multiline_title"
+                        android:layout_alignBottom="@+id/tv_listitem_multiline_title"
+                        android:singleLine="true"
+                         android:layout_marginLeft="200dip"
+                        android:text="Z07-J-05979"
+                        android:textAppearance="@style/NavCommonListItemInfoText" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/nav_settings_divider_line" />
+            </RelativeLayout>

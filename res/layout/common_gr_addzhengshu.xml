@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/exit_layout"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/alert_bg" >
+
+        <TextView
+            android:id="@+id/tv_tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:padding="5dp"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:text="选择证书" />
+        
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:text="退出后，你将收不到新的消\n息.确定要退出？"
+            android:visibility="gone" /> 
+        
+        
+             <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/ll_right_btn"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarSize="0.0dip"
+        android:layout_marginBottom="5dip"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            
+            
+           <RelativeLayout
+                android:id="@+id/nav_settings_voice_mode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" >
+
+                <RelativeLayout
+                    android:id="@+id/ll_listitem_multiline_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dip"
+                    android:orientation="horizontal" >
+                    
+<Spinner android:id="@+id/Spinner_zhengshu"
+           android:layout_width="fill_parent"
+           android:layout_height="50dip"
+           android:layout_marginRight="10.0dip"
+                        android:layout_marginLeft="10dip"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            
+           
+           
+           <RelativeLayout
+                android:id="@+id/layout_zs_hao1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" >
+
+                <RelativeLayout
+                    android:id="@+id/ll_listitem_multiline_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_zs_hao1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginLeft="10dip"
+                        android:inputType="text"
+                        android:focusable="true"
+                        android:enabled="true"
+                        android:textAppearance="@style/NavCommonListItemTitleText" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+            
+           
+                      <RelativeLayout
+                android:id="@+id/layout_zs_tit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" 
+                android:layout_marginTop="10dip">
+
+                <RelativeLayout
+                    android:id="@+id/ll_listitem_multiline_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+
+
+					<EditText
+                        android:id="@+id/et_zs_tit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginLeft="10dip"
+                        android:singleLine="true"
+                        android:hint="证书名称"
+                        android:textAppearance="@style/NavCommonListItemTitleText" />
+				
+                </RelativeLayout>
+            </RelativeLayout>
+           
+                      <RelativeLayout
+                android:id="@+id/layout_zs_hao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" 
+                android:layout_marginTop="10dip">
+
+                <RelativeLayout
+                    android:id="@+id/ll_listitem_multiline_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                  
+					<EditText
+                        android:id="@+id/et_zs_hao"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginLeft="10dip"
+                        android:singleLine="true"
+                        android:hint="证书号码"
+                        android:textAppearance="@style/NavCommonListItemTitleText" />
+                </RelativeLayout>
+            </RelativeLayout>
+            
+                      
+            
+           
+        </LinearLayout>
+    </RelativeLayout>
+        
+          
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="30dp"
+             >
+            
+            <Button
+              android:id="@+id/exitBtn0"
+              android:layout_width="120dp"
+              android:layout_height="wrap_content"
+              android:text="返    回"
+              android:textSize="16sp"
+              android:textColor="#fff"
+              android:layout_marginRight="10dip"
+              android:background="@drawable/btn_style_alert_red"
+              android:gravity="center"
+              />
+            <Button
+              android:id="@+id/exitBtn1"
+              android:layout_width="120dp"
+              android:layout_height="wrap_content"
+              android:text="确    定"
+              android:textSize="16sp"
+              android:textColor="#fff"
+              android:background="@drawable/btn_style_alert"
+              android:gravity="center"
+              />
+       
+        </LinearLayout>
+
+    </LinearLayout>

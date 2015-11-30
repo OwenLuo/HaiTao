@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="common_margin_ten">10.0dip</dimen>    
+    <dimen name="groupon_detail_item_name_margin_top">10.0dip</dimen>
+    <dimen name="groupon_detail_item_name_margin_left">0.0dip</dimen>
+    <dimen name="groupon_detail_item_name_margin_right">0.0dip</dimen>
+    <dimen name="groupon_detail_item_name_margin_between">4.0dip</dimen>
+    <dimen name="groupon_detail_item_value_margin_top">6.0dip</dimen>
+    <dimen name="groupon_detail_action_btn_buy_padding_right">0.0dip</dimen>
+    <dimen name="groupon_detail_buy_bar_height">50.0dip</dimen>
+    <dimen name="groupon_detail_promo_image_width">29.0dip</dimen>
+    <dimen name="groupon_detail_promo_image_height">13.0dip</dimen>
+    <dimen name="groupon_detail_promo_image_margin">6.0dip</dimen>
+    <dimen name="groupon_detail_price_margin">10.0dip</dimen>
+    <dimen name="groupon_detail_recommend_icon_height">54.0dip</dimen>
+    <dimen name="groupon_detail_recommend_icon_width">84.0dip</dimen>
+    <dimen name="groupon_detail_section_title_size">14.0sp</dimen>
+</resources>

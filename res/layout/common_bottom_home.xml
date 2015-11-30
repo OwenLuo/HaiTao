@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/buttonsbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#ffebebeb" >
+
+
+        <LinearLayout
+            android:id="@+id/mynormalbar"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/main_bottombar_background"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/nearby"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_bl_button_background"
+                android:clickable="true"
+                android:onClick="main_qserver" >
+ <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/IV_starstop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon1" />
+
+                    <TextView
+                        android:id="@+id/TV_starstop"
+                        style="@style/BottomBarTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="我的" />
+                </LinearLayout>
+                
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="#ffcccccc"/>
+            <RelativeLayout
+                android:id="@+id/to_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_bm_button_background"
+                android:clickable="true"
+                android:onClick="main_allloc">
+
+
+                
+                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/IV_teach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon6" />
+
+                    <TextView
+                        android:id="@+id/TV_teach"
+                        style="@style/BottomBarTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="周边" />
+                </LinearLayout>
+            </RelativeLayout>
+           
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="#ffcccccc" />
+
+ <RelativeLayout
+                android:id="@+id/route"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_bm_button_background"
+                android:clickable="true"
+                android:onClick="main_playback" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon4" />
+
+                    <TextView
+                        style="@style/BottomBarTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="回放" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="#ffcccccc" />
+
+            <RelativeLayout
+                android:id="@+id/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_br_button_background"
+                android:clickable="true"
+                android:onClick="main_shezhi" >
+  <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/IV_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon3" />
+
+                    <TextView
+                        android:id="@+id/TV_setting"
+                        style="@style/BottomBarTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="设置" />
+                </LinearLayout>
+                
+            </RelativeLayout>
+        </LinearLayout>
+        
+    </LinearLayout>

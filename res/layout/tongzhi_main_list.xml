@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#ffebebeb">
+    <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/black"
+            android:gravity="center_vertical" >
+ 			<Button
+            android:id="@+id/title_btn_left"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/backbtn"
+            android:clickable="true"
+            android:onClick="btn_back" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="公告消息"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/right_btn2"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/title_btn_right"
+                android:onClick="saomainright"
+                android:src="@drawable/title_btn_function"
+                android:visibility="gone" />
+            <Button 
+                android:id="@+id/bu_msg"
+			    android:layout_width="25dp" 
+        		android:layout_height="18dp"
+        		android:layout_alignParentBottom="true"
+        		android:layout_alignParentRight="true" 
+        		android:layout_marginBottom="10dp"
+        		android:layout_marginRight="55dp"
+        		android:background="@drawable/index_msg"
+                android:onClick="index_msg"/>
+            <TextView
+                    android:id="@+id/app_update_shortcut_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/bu_msg"
+                    android:layout_alignTop="@id/bu_msg"
+                    android:layout_marginRight="-8.0dip"
+                    android:layout_marginTop="-8.0dip"
+                    android:background="@drawable/manager_app_update_tip_icon_new"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="1"
+                    android:textColor="#ffffffff"
+                    android:textSize="10.699982dip"
+                    android:textStyle="bold" />
+		 	<Button 
+			    android:layout_width="23dp" 
+        		android:layout_height="38dp"
+        		android:layout_alignParentBottom="true"
+        		android:layout_alignParentRight="true" 
+        		android:layout_marginLeft="10dip"
+        		android:layout_marginTop="10dip"
+        		android:layout_marginRight="15dip"
+        		android:layout_marginBottom="10dip"
+        		android:background="@drawable/index_per"
+                android:onClick="index_per"/>
+        </RelativeLayout>
+
+     <RelativeLayout
+        android:id="@+id/ll_right_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:layout_below="@id/title"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white" >
+
+
+        <TextView
+            android:id="@+id/tv_searchbox_history_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/dark_gray"
+            android:text="王善德"/>
+
+      
+    </RelativeLayout>
+    
+     
+     
+        
+          
+        
+        
+        
+           <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_right_btn" >
+
+
+        <com.lvcaiye.haitao.refresh.ZrcListView
+            android:id="@+id/lv_keshi"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:listSelector="#00000000"/>
+    
+
+
+    </RelativeLayout>
+   
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" >
+
+        <ListView
+            android:id="@+id/lv_xuesheng"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            style="@style/common_card_layout.padding_L_R"
+        android:listSelector="@android:color/transparent"
+        android:divider="#ffe6e6e6"
+            android:dividerHeight="1.0dip"
+         />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
