@@ -135,6 +135,21 @@ public class firstActivity extends BaseActivity {
 
 	}
 
+	@JavascriptInterface
+	public void wxCircleShare(final String shareTitle, final String shareContent,
+			final String shareImage, final String shareUrl) {
+
+		ShareParams params = new ShareParams();
+		params.setTitle(shareTitle);
+		params.setContent(shareContent);
+		params.setImageUrl(shareImage);
+		params.setShareUrl(shareUrl);
+		ShareContorller.shareWxCircle(firstActivity.this, params);
+
+		webview.loadUrl("javascript:closeShare()");
+
+	}
+
 	// 选择系统文件上传
 	private class MyWebChromeClient extends WebChromeClient {
 		// 关键代码，以下函数是没有API文档的，所以在Eclipse中会报错，如果添加了@Override关键字在这里的话。
